@@ -1,0 +1,8 @@
+.InputAddOn {
+  display: flex;
+  width: 200px;
+}
+
+.InputAddOn-field {
+  flex: 1;
+}

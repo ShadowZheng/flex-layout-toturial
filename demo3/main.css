@@ -1,0 +1,41 @@
+.holy-grail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+header,
+footer {
+  flex: 0 0 4em;
+  background: #888;
+}
+
+.holy-grail-body {
+  display: flex;
+  flex: 1;
+}
+main {
+  flex: 1;
+  background: #ccc;
+}
+nav, aside {
+  flex: 0 0 12em;
+}
+nav {
+  order: -1;
+  background: blue;
+}
+aside {
+  background: red;
+}
+
+@media (max-width: 768px) {
+  .holy-grail-body {
+    flex-direction: column;
+  }
+  main,
+  nav,
+  aside {
+    flex: auto;
+  }
+}
